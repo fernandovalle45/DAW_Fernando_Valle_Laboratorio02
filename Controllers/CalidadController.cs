@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using SistemaControlDeCalidad.Data;
 using SistemaControlDeCalidad.Models;
 using SistemaControlDeCalidad.ViewModels;
@@ -9,9 +10,10 @@ namespace SistemaControlDeCalidad.Controllers
     {
         private readonly CalidadRepository _repository;
 
-        public CalidadController()
+        // Constructor con inyección de dependencias
+        public CalidadController(CalidadRepository repository)
         {
-            _repository = new CalidadRepository();
+            _repository = repository;
         }
 
         public IActionResult Index()
@@ -52,10 +54,22 @@ namespace SistemaControlDeCalidad.Controllers
             ViewData["PromedioDefectos"] = viewModel.PromedioDefectos;
             ViewData["FechaServidor"] = DateTime.Now;
 
-            ViewBag.Inspectores = _repository.ObtenerInspectores();
-            ViewBag.Productos = _repository.ObtenerProductos();
-            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" };
-            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" };
+            // Convertir a SelectListItem
+            ViewBag.Inspectores = _repository.ObtenerInspectores()
+                .Select(i => new SelectListItem { Value = i, Text = i })
+                .ToList();
+
+            ViewBag.Productos = _repository.ObtenerProductos()
+                .Select(p => new SelectListItem { Value = p, Text = p })
+                .ToList();
+
+            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" }
+                .Select(t => new SelectListItem { Value = t, Text = t })
+                .ToList();
+
+            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" }
+                .Select(r => new SelectListItem { Value = r, Text = r })
+                .ToList();
 
             return View(viewModel);
         }
@@ -105,10 +119,22 @@ namespace SistemaControlDeCalidad.Controllers
             if (inspeccion == null)
                 return NotFound();
 
-            ViewBag.Inspectores = _repository.ObtenerInspectores();
-            ViewBag.Productos = _repository.ObtenerProductos();
-            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" };
-            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" };
+            // Convertir a SelectListItem
+            ViewBag.Inspectores = _repository.ObtenerInspectores()
+                .Select(i => new SelectListItem { Value = i, Text = i })
+                .ToList();
+
+            ViewBag.Productos = _repository.ObtenerProductos()
+                .Select(p => new SelectListItem { Value = p, Text = p })
+                .ToList();
+
+            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" }
+                .Select(t => new SelectListItem { Value = t, Text = t })
+                .ToList();
+
+            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" }
+                .Select(r => new SelectListItem { Value = r, Text = r })
+                .ToList();
 
             return View(inspeccion);
         }
@@ -135,10 +161,22 @@ namespace SistemaControlDeCalidad.Controllers
                 }
             }
 
-            ViewBag.Inspectores = _repository.ObtenerInspectores();
-            ViewBag.Productos = _repository.ObtenerProductos();
-            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" };
-            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" };
+            // Si hay error, recargar las listas como SelectListItem
+            ViewBag.Inspectores = _repository.ObtenerInspectores()
+                .Select(i => new SelectListItem { Value = i, Text = i })
+                .ToList();
+
+            ViewBag.Productos = _repository.ObtenerProductos()
+                .Select(p => new SelectListItem { Value = p, Text = p })
+                .ToList();
+
+            ViewBag.TiposDefecto = new[] { "Dimensional", "Superficial", "Funcional", "Estético" }
+                .Select(t => new SelectListItem { Value = t, Text = t })
+                .ToList();
+
+            ViewBag.Resultados = new[] { "Aprobado", "Rechazado" }
+                .Select(r => new SelectListItem { Value = r, Text = r })
+                .ToList();
 
             return View(inspeccion);
         }

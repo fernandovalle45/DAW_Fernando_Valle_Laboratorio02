@@ -5,84 +5,128 @@
 }
 
 <div class="container mt-4">
-    <h1 class="display-4">Editar Inspección</h1>
-    <hr />
-
     <div class="row">
-        <div class="col-md-8">
-            <form asp-action="Edit">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="Id" />
-
-                <div class="mb-3">
-                    <label asp-for="NumeroInspeccion" class="form-label"></label>
-                    <input asp-for="NumeroInspeccion" class="form-control" />
-                    <span asp-validation-for="NumeroInspeccion" class="text-danger"></span>
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    <h1 class="display-6">Editar Inspección</h1>
                 </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="PorcentajeDefectos" />
+                        <input type="hidden" asp-for="NivelCalidad" />
+                        <input type="hidden" asp-for="FechaInspeccion" />
 
-                <div class="mb-3">
-                    <label asp-for="Lote" class="form-label"></label>
-                    <input asp-for="Lote" class="form-control" />
-                    <span asp-validation-for="Lote" class="text-danger"></span>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Producto" class="form-label"></label>
-                    <select asp-for="Producto" class="form-select" asp-items="ViewBag.Productos">
-                        <option value="">Seleccione un producto</option>
-                    </select>
-                    <span asp-validation-for="Producto" class="text-danger"></span>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Inspector" class="form-label"></label>
-                    <select asp-for="Inspector" class="form-select" asp-items="ViewBag.Inspectores">
-                        <option value="">Seleccione un inspector</option>
-                    </select>
-                    <span asp-validation-for="Inspector" class="text-danger"></span>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
                         <div class="mb-3">
-                            <label asp-for="CantidadInspeccionada" class="form-label"></label>
-                            <input asp-for="CantidadInspeccionada" class="form-control" />
-                            <span asp-validation-for="CantidadInspeccionada" class="text-danger"></span>
+                            <label asp-for="NumeroInspeccion" class="form-label fw-bold"></label>
+                            <input asp-for="NumeroInspeccion" class="form-control" />
+                            <span asp-validation-for="NumeroInspeccion" class="text-danger"></span>
                         </div>
-                    </div>
-                    <div class="col-md-6">
+
                         <div class="mb-3">
-                            <label asp-for="CantidadDefectuosa" class="form-label"></label>
-                            <input asp-for="CantidadDefectuosa" class="form-control" />
-                            <span asp-validation-for="CantidadDefectuosa" class="text-danger"></span>
+                            <label asp-for="Lote" class="form-label fw-bold"></label>
+                            <input asp-for="Lote" class="form-control" />
+                            <span asp-validation-for="Lote" class="text-danger"></span>
                         </div>
-                    </div>
-                </div>
 
-                <div class="mb-3">
-                    <label asp-for="Resultado" class="form-label"></label>
-                    <select asp-for="Resultado" class="form-select" asp-items="ViewBag.Resultados">
-                        <option value="">Seleccione un resultado</option>
-                    </select>
-                    <span asp-validation-for="Resultado" class="text-danger"></span>
-                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Producto" class="form-label fw-bold"></label>
+                                    <select asp-for="Producto" class="form-select" asp-items="ViewBag.Productos">
+                                        <option value="">Seleccione un producto</option>
+                                    </select>
+                                    <span asp-validation-for="Producto" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Inspector" class="form-label fw-bold"></label>
+                                    <select asp-for="Inspector" class="form-select" asp-items="ViewBag.Inspectores">
+                                        <option value="">Seleccione un inspector</option>
+                                    </select>
+                                    <span asp-validation-for="Inspector" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="mb-3">
-                    <label asp-for="TipoDefecto" class="form-label"></label>
-                    <select asp-for="TipoDefecto" class="form-select" asp-items="ViewBag.TiposDefecto">
-                        <option value="">Sin defecto</option>
-                    </select>
-                </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="CantidadInspeccionada" class="form-label fw-bold"></label>
+                                    <input asp-for="CantidadInspeccionada" class="form-control" type="number" min="1" />
+                                    <span asp-validation-for="CantidadInspeccionada" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="CantidadDefectuosa" class="form-label fw-bold"></label>
+                                    <input asp-for="CantidadDefectuosa" class="form-control" type="number" min="0" />
+                                    <span asp-validation-for="CantidadDefectuosa" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="bi bi-save"></i> Guardar Cambios
-                    </button>
-                    <a asp-action="Index" class="btn btn-secondary">
-                        <i class="bi bi-arrow-left"></i> Cancelar
-                    </a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Resultado" class="form-label fw-bold"></label>
+                                    <select asp-for="Resultado" class="form-select" asp-items="ViewBag.Resultados">
+                                        <option value="">Seleccione un resultado</option>
+                                    </select>
+                                    <span asp-validation-for="Resultado" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="TipoDefecto" class="form-label fw-bold"></label>
+                                    <select asp-for="TipoDefecto" class="form-select" asp-items="ViewBag.TiposDefecto">
+                                        <option value="">Sin defecto</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mostrar información de solo lectura -->
+                        <div class="alert alert-info">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <strong>Porcentaje de Defectos:</strong>
+                                    <span class="badge @(Model.PorcentajeDefectos > 5 ? "bg-danger" : "bg-success")">
+                                        @Model.PorcentajeDefectos.ToString("F2")%
+                                    </span>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>Nivel de Calidad:</strong>
+                                    <span class="badge @(Model.NivelCalidad == "Excelente" ? "bg-success" :
+                                                                                                   Model.NivelCalidad == "Bueno" ? "bg-info" :
+                                                                                                   Model.NivelCalidad == "Regular" ? "bg-warning" : "bg-danger")">
+                                        @Model.NivelCalidad
+                                    </span>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>Fecha:</strong>
+                                    @Model.FechaInspeccion.ToString("dd/MM/yyyy HH:mm")
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-warning">
+                                <i class="bi bi-save"></i> Guardar Cambios
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Cancelar
+                            </a>
+                            <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-info">
+                                <i class="bi bi-eye"></i> Ver Detalles
+                            </a>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
@@ -92,4 +136,22 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Script para validar que defectuosas no sea mayor que inspeccionadas -->
+    <script>
+        $(document).ready(function() {
+            $('#CantidadDefectuosa, #CantidadInspeccionada').on('change keyup', function() {
+                var inspeccionadas = parseInt($('#CantidadInspeccionada').val()) || 0;
+                var defectuosas = parseInt($('#CantidadDefectuosa').val()) || 0;
+
+                if (defectuosas > inspeccionadas) {
+                    $('#CantidadDefectuosa').addClass('is-invalid');
+                    $('#CantidadDefectuosa').after('<div class="invalid-feedback">La cantidad defectuosa no puede ser mayor a la inspeccionada</div>');
+                } else {
+                    $('#CantidadDefectuosa').removeClass('is-invalid');
+                    $('.invalid-feedback').remove();
+                }
+            });
+        });
+    </script>
 }

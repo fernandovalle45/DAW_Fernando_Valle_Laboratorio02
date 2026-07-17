@@ -1,7 +1,12 @@
+using SistemaControlDeCalidad.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Registrar el repositorio como Singleton (una sola instancia para toda la aplicación)
+builder.Services.AddSingleton<CalidadRepository>();
 
 var app = builder.Build();
 
@@ -20,10 +25,9 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+// Ruta por defecto a Calidad
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Calidad}/{action=Index}/{id?}");
 
 app.Run();
