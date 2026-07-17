@@ -1,0 +1,323 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\sistemacontroldecalidad.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:sistemacontroldecalidad.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\controllers\\calidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:controllers\\calidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\data\\calidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:data\\calidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\calidad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\calidad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\viewmodels\\dashboardcalidadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:viewmodels\\dashboardcalidadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\viewmodels\\inspeccionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:viewmodels\\inspeccionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|c:\\users\\theda\\documents\\proyectos visual studio code\\visual studio 2022\\sistemacontroldecalidad\\models\\inspeccioncalidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F928A1D-0743-47A2-9DF1-C725556D3E60}|SistemaControlDeCalidad.csproj|solutionrelative:models\\inspeccioncalidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-17T04:37:13.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Details.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Details.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T04:31:45.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T04:30:48.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T04:24:24.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T04:24:12.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T04:24:07.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-17T04:23:28.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SistemaControlDeCalidad.csproj",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\SistemaControlDeCalidad.csproj",
+              "RelativeDocumentMoniker": "SistemaControlDeCalidad.csproj",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\SistemaControlDeCalidad.csproj",
+              "RelativeToolTip": "SistemaControlDeCalidad.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-16T23:41:27.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T00:06:40.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T00:02:52.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T00:01:28.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CalidadController.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Controllers\\CalidadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalidadController.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Controllers\\CalidadController.cs",
+              "RelativeToolTip": "Controllers\\CalidadController.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAIwMkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:52:58.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Create.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Create.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T00:05:55.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calidad\\Index.cshtml",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Views\\Calidad\\Index.cshtml",
+              "RelativeToolTip": "Views\\Calidad\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-17T00:01:09.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CalidadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Data\\CalidadRepository.cs",
+              "RelativeDocumentMoniker": "Data\\CalidadRepository.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Data\\CalidadRepository.cs",
+              "RelativeToolTip": "Data\\CalidadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:42:01.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DashboardCalidadViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\ViewModels\\DashboardCalidadViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DashboardCalidadViewModel.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\ViewModels\\DashboardCalidadViewModel.cs",
+              "RelativeToolTip": "ViewModels\\DashboardCalidadViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:51:04.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InspeccionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\ViewModels\\InspeccionViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InspeccionViewModel.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\ViewModels\\InspeccionViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InspeccionViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:48:25.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InspeccionCalidad.cs",
+              "DocumentMoniker": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Models\\InspeccionCalidad.cs",
+              "RelativeDocumentMoniker": "Models\\InspeccionCalidad.cs",
+              "ToolTip": "C:\\Users\\theda\\Documents\\Proyectos Visual Studio Code\\Visual Studio 2022\\SistemaControlDeCalidad\\Models\\InspeccionCalidad.cs",
+              "RelativeToolTip": "Models\\InspeccionCalidad.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:34:30.19Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

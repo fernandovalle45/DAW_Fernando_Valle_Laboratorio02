@@ -1,0 +1,138 @@
+﻿@model SistemaControlDeCalidad.ViewModels.InspeccionViewModel
+
+@{
+    ViewData["Title"] = "Detalles de Inspección";
+    var inspeccion = Model.Inspeccion;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header @(inspeccion?.Resultado == "Aprobado" ? "bg-success" : "bg-danger") text-white">
+                    <h1 class="display-6">Detalles de Inspección</h1>
+                    <span class="badge bg-light text-dark">@inspeccion?.NumeroInspeccion</span>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card @(Model.ClaseColor == "success" ? "border-success" :
+                                                                            Model.ClaseColor == "danger" ? "border-danger" :
+                                                                            Model.ClaseColor == "warning" ? "border-warning" : "border-info")">
+                                <div class="card-body text-center">
+                                    <h4>Nivel de Calidad</h4>
+                                    <span class="badge bg-@Model.ClaseColor" style="font-size: 1.2rem;">
+                                        @inspeccion?.NivelCalidad
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-primary">
+                                <div class="card-body text-center">
+                                    <h4>Resultado</h4>
+                                    <span class="badge @(inspeccion?.Resultado == "Aprobado" ? "bg-success" : "bg-danger")"
+                                          style="font-size: 1.2rem;">
+                                        @inspeccion?.Resultado
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5>Información General</h5>
+                        </div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-sm-4">Número de Inspección</dt>
+                                <dd class="col-sm-8">@inspeccion?.NumeroInspeccion</dd>
+
+                                <dt class="col-sm-4">Lote</dt>
+                                <dd class="col-sm-8">@inspeccion?.Lote</dd>
+
+                                <dt class="col-sm-4">Producto</dt>
+                                <dd class="col-sm-8">@inspeccion?.Producto</dd>
+
+                                <dt class="col-sm-4">Inspector</dt>
+                                <dd class="col-sm-8">@inspeccion?.Inspector</dd>
+
+                                <dt class="col-sm-4">Fecha de Inspección</dt>
+                                <dd class="col-sm-8">@inspeccion?.FechaInspeccion.ToString("dd/MM/yyyy HH:mm")</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
+                        <div class="card-header bg-light">
+                            <h5>Métricas de Calidad</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <h6>Cantidad Inspeccionada</h6>
+                                        <h3 class="text-primary">@inspeccion?.CantidadInspeccionada</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <h6>Cantidad Defectuosa</h6>
+                                        <h3 class="text-danger">@inspeccion?.CantidadDefectuosa</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <h6>Porcentaje de Defectos</h6>
+                                        <h3 class="@(inspeccion?.PorcentajeDefectos > 5 ? "text-danger" : "text-success")">
+                                            @inspeccion?.PorcentajeDefectos.ToString("F2")%
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Barra de progreso de defectos -->
+                            <div class="mt-3">
+                                <label>Nivel de Defectos</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar @(inspeccion?.PorcentajeDefectos > 5 ? "bg-danger" : "bg-success")"
+                                         style="width: @Math.Min(inspeccion?.PorcentajeDefectos ?? 0, 100)%">
+                                        @inspeccion?.PorcentajeDefectos.ToString("F1")%
+                                    </div>
+                                </div>
+                                <small class="text-muted">Umbral de rechazo: 5%</small>
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(inspeccion?.TipoDefecto))
+                            {
+                                <div class="mt-3">
+                                    <label>Tipo de Defecto</label>
+                                    <div class="alert alert-warning">
+                                        @inspeccion.TipoDefecto
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a asp-action="Edit" asp-route-id="@inspeccion?.Id" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@inspeccion?.Id" class="btn btn-danger">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+}

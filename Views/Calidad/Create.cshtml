@@ -1,0 +1,83 @@
+﻿@model SistemaControlDeCalidad.Models.InspeccionCalidad
+
+@{
+    ViewData["Title"] = "Nueva Inspección";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4">Nueva Inspección</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="NumeroInspeccion" class="form-label"></label>
+                    <input asp-for="NumeroInspeccion" class="form-control" />
+                    <span asp-validation-for="NumeroInspeccion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Lote" class="form-label"></label>
+                    <input asp-for="Lote" class="form-control" />
+                    <span asp-validation-for="Lote" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Producto" class="form-label"></label>
+                    <select asp-for="Producto" class="form-select" asp-items="ViewBag.Productos"></select>
+                    <span asp-validation-for="Producto" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Inspector" class="form-label"></label>
+                    <select asp-for="Inspector" class="form-select" asp-items="ViewBag.Inspectores"></select>
+                    <span asp-validation-for="Inspector" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="CantidadInspeccionada" class="form-label"></label>
+                            <input asp-for="CantidadInspeccionada" class="form-control" />
+                            <span asp-validation-for="CantidadInspeccionada" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="CantidadDefectuosa" class="form-label"></label>
+                            <input asp-for="CantidadDefectuosa" class="form-control" />
+                            <span asp-validation-for="CantidadDefectuosa" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Resultado" class="form-label"></label>
+                    <select asp-for="Resultado" class="form-select" asp-items="ViewBag.Resultados"></select>
+                    <span asp-validation-for="Resultado" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="TipoDefecto" class="form-label"></label>
+                    <select asp-for="TipoDefecto" class="form-select" asp-items="ViewBag.TiposDefecto">
+                        <option value="">Sin defecto</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

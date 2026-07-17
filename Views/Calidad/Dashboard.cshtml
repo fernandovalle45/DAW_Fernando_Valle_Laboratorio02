@@ -1,0 +1,174 @@
+﻿@model SistemaControlDeCalidad.ViewModels.DashboardCalidadViewModel
+
+@{
+    ViewData["Title"] = "Dashboard de Calidad";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row mb-4">
+        <div class="col">
+            <h1 class="display-4">Dashboard de Calidad</h1>
+            <p class="lead">Monitoreo de indicadores de calidad en tiempo real</p>
+        </div>
+        <div class="col text-end">
+            <span class="badge bg-secondary">Fecha: @ViewData["FechaServidor"]</span>
+        </div>
+    </div>
+
+    <!-- Tarjetas de métricas -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Inspecciones</h5>
+                    <h2 class="display-4">@ViewData["TotalInspecciones"]</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Aprobadas</h5>
+                    <h2 class="display-4">@ViewData["Aprobadas"]</h2>
+                    <span>@Model.TasaAprobacion.ToString("F1")% del total</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Rechazadas</h5>
+                    <h2 class="display-4">@ViewData["Rechazadas"]</h2>
+                    <span>@((100 - Model.TasaAprobacion).ToString("F1"))% del total</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">% Defectos Global</h5>
+                    <h2 class="display-4">@Model.PorcentajeDefectosGlobal.ToString("F1")%</h2>
+                    <span>Promedio: @Model.PromedioDefectos.ToString("F2")%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proporciones del Dashboard -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Proporción de Resultados</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center p-3 bg-success bg-opacity-25 rounded">
+                                <h3 class="text-success">@Model.TasaAprobacion.ToString("F0")%</h3>
+                                <p>Lotes Aprobados</p>
+                                <small>Métricas por debajo del 5% de unidades defectuosas</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-3 bg-danger bg-opacity-25 rounded">
+                                <h3 class="text-danger">@((100 - Model.TasaAprobacion).ToString("F0"))%</h3>
+                                <p>Lotes Rechazados</p>
+                                <small>Superaron tolerancias o violaron reglas</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Barra de progreso -->
+                    <div class="mt-3">
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar bg-success"
+                                 style="width: @Model.TasaAprobacion.ToString("F0")%">
+                                Aprobados @Model.TasaAprobacion.ToString("F0")%
+                            </div>
+                            <div class="progress-bar bg-danger"
+                                 style="width: @((100 - Model.TasaAprobacion).ToString("F0"))%">
+                                Rechazados @((100 - Model.TasaAprobacion).ToString("F0"))%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Información Gerencial</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Mejor Inspector</span>
+                            <span class="badge bg-success rounded-pill">@Model.MejorInspector</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Tasa de Aprobación Global</span>
+                            <span class="badge bg-info rounded-pill">@Model.TasaAprobacion.ToString("F1")%</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>% Defectos Promedio</span>
+                            <span class="badge @(Model.PromedioDefectos > 5 ? "bg-danger" : "bg-warning") rounded-pill">
+                                @Model.PromedioDefectos.ToString("F2")%
+                            </span>
+                        </div>
+                        <div class="list-group-item">
+                            <span>Umbral de Rechazo Automático</span>
+                            <span class="badge bg-danger float-end">5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Últimas inspecciones -->
+    <div class="card mt-4">
+        <div class="card-header">
+            <h5>Últimas 5 Inspecciones</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>N° Inspección</th>
+                            <th>Lote</th>
+                            <th>Producto</th>
+                            <th>Resultado</th>
+                            <th>% Defectos</th>
+                            <th>Nivel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.InspeccionesRecientes)
+                        {
+                            <tr>
+                                <td>@item.NumeroInspeccion</td>
+                                <td>@item.Lote</td>
+                                <td>@item.Producto</td>
+                                <td>
+                                    <span class="badge @(item.Resultado == "Aprobado" ? "bg-success" : "bg-danger")">
+                                        @item.Resultado
+                                    </span>
+                                </td>
+                                <td>@item.PorcentajeDefectos.ToString("F2")%</td>
+                                <td>
+                                    <span class="badge @(item.NivelCalidad == "Excelente" ? "bg-success" :
+                                                                                                   item.NivelCalidad == "Bueno" ? "bg-info" :
+                                                                                                   item.NivelCalidad == "Regular" ? "bg-warning" : "bg-danger")">
+                                    @item.NivelCalidad
+                                </span>
+                            </td>
+                        </tr>
+                                                }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
