@@ -27,13 +27,31 @@
 
                 <div class="mb-3">
                     <label asp-for="Producto" class="form-label"></label>
-                    <select asp-for="Producto" class="form-select" asp-items="ViewBag.Productos"></select>
+                    <select asp-for="Producto" class="form-select">
+                        <option value="">Seleccione un producto</option>
+                        @if (ViewBag.Productos != null)
+                        {
+                            foreach (var item in ViewBag.Productos)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
+                    </select>
                     <span asp-validation-for="Producto" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="Inspector" class="form-label"></label>
-                    <select asp-for="Inspector" class="form-select" asp-items="ViewBag.Inspectores"></select>
+                    <select asp-for="Inspector" class="form-select">
+                        <option value="">Seleccione un inspector</option>
+                        @if (ViewBag.Inspectores != null)
+                        {
+                            foreach (var item in ViewBag.Inspectores)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
+                    </select>
                     <span asp-validation-for="Inspector" class="text-danger"></span>
                 </div>
 
@@ -56,20 +74,40 @@
 
                 <div class="mb-3">
                     <label asp-for="Resultado" class="form-label"></label>
-                    <select asp-for="Resultado" class="form-select" asp-items="ViewBag.Resultados"></select>
+                    <select asp-for="Resultado" class="form-select">
+                        <option value="">Seleccione un resultado</option>
+                        @if (ViewBag.Resultados != null)
+                        {
+                            foreach (var item in ViewBag.Resultados)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
+                    </select>
                     <span asp-validation-for="Resultado" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="TipoDefecto" class="form-label"></label>
-                    <select asp-for="TipoDefecto" class="form-select" asp-items="ViewBag.TiposDefecto">
+                    <select asp-for="TipoDefecto" class="form-select">
                         <option value="">Sin defecto</option>
+                        @if (ViewBag.TiposDefecto != null)
+                        {
+                            foreach (var item in ViewBag.TiposDefecto)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
                     </select>
                 </div>
 
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save"></i> Guardar
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Cancelar
+                    </a>
                 </div>
             </form>
         </div>
@@ -80,4 +118,5 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 }

@@ -6,16 +6,10 @@ namespace SistemaControlDeCalidad.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
+            // Redirige al controlador de Calidad
+            return RedirectToAction("Index", "Calidad");
         }
 
         public IActionResult Privacy()
@@ -23,10 +17,9 @@ namespace SistemaControlDeCalidad.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
